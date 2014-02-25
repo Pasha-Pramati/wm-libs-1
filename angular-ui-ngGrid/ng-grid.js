@@ -3119,6 +3119,8 @@ ngGridDirectives.directive('ngGrid', ['$compile', '$filter', '$templateCache', '
                                     grid.rowMap[indx] = j;
                                 });
                                 grid.searchProvider.evalFilter();
+                             /* bewlow code causes the error in grid when it is wrapped inside the hidden container -----by PASHA*/
+                                //grid.configureColumnWidths();
                                 grid.refreshDomSizes();
                                 if (grid.config.sortInfo.fields.length > 0) {
                                     grid.sortColumnsInit();
