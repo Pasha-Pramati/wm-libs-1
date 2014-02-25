@@ -3119,7 +3119,6 @@ ngGridDirectives.directive('ngGrid', ['$compile', '$filter', '$templateCache', '
                                     grid.rowMap[indx] = j;
                                 });
                                 grid.searchProvider.evalFilter();
-                                grid.configureColumnWidths();
                                 grid.refreshDomSizes();
                                 if (grid.config.sortInfo.fields.length > 0) {
                                     grid.sortColumnsInit();
